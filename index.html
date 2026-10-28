@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CookaCrochet — Handmade with a little magic</title>
+  <meta name="description" content="CookaCrochet handmade crochet flowers, blooms, hair accessories and custom creations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">🌼 Handmade with love • Delivery across PAN India • Custom orders welcome</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" data-page="home" aria-label="CookaCrochet home">
+      <img src="assets/logo.png" alt="CookaCrochet logo">
+      <div>
+        <strong>CookaCrochet</strong>
+        <span>little blooms, made by hand</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+
+    <nav class="desktop-nav">
+      <a href="#home" data-page="home">Home</a>
+      <a href="#shop" data-page="shop">Shop</a>
+      <a href="#custom" data-page="custom">Custom Orders</a>
+      <a href="#about" data-page="about">Our Story</a>
+      <a href="#contact" data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-page="home">Home <span>01</span></a>
+    <a href="#shop" data-page="shop">Shop <span>02</span></a>
+    <a href="#custom" data-page="custom">Custom Orders <span>03</span></a>
+    <a href="#about" data-page="about">Our Story <span>04</span></a>
+    <a href="#contact" data-page="contact">Contact <span>05</span></a>
+    <div class="menu-note">A tiny handmade corner for flowers, gifts & happy little things ✨</div>
+  </div>
+
+  <main>
+    <!-- HOME -->
+    <section class="page active" id="home">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">HANDMADE • SOFT • ONE OF A KIND</p>
+          <h1>Flowers that<br><em>never fade.</em></h1>
+          <p class="hero-text">Cute crochet blooms, tiny keepsakes and thoughtful handmade pieces — created slowly, lovingly and just for you.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#shop">Explore the collection <span>↗</span></a>
+            <a class="text-btn" href="#custom">Need something custom? <span>→</span></a>
+          </div>
+          <div class="trust-row">
+            <div><b>01</b><span>Handmade</span></div>
+            <div><b>02</b><span>Custom orders</span></div>
+            <div><b>03</b><span>PAN India delivery</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="blob blob-one"></div>
+          <div class="blob blob-two"></div>
+          <div class="flower-card">
+            <div class="flower flower-big"><span>🌻</span></div>
+            <div class="mini-flower mf-one">🌼</div>
+            <div class="mini-flower mf-two">🌷</div>
+            <div class="mini-flower mf-three">🌸</div>
+            <div class="card-tag">made with<br>patience ♡</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <div><p class="eyebrow">A LITTLE SOMETHING</p><h2>Made to make someone smile.</h2></div>
+        <a class="text-btn" href="#shop">See all pieces →</a>
+      </div>
+
+      <div class="featured-grid">
+        <article class="feature-card peach">
+          <div class="feature-icon">🌻</div><span>01</span><h3>Forever Blooms</h3><p>Sunny crochet flowers that stay beautiful long after the day.</p>
+        </article>
+        <article class="feature-card lilac">
+          <div class="feature-icon">🎀</div><span>02</span><h3>Cute Accessories</h3><p>Little handmade details to make everyday outfits feel special.</p>
+        </article>
+        <article class="feature-card mint">
+          <div class="feature-icon">💌</div><span>03</span><h3>Custom Love</h3><p>Tell us your colours, mood or idea — we'll turn it into yarn magic.</p>
+        </article>
+      </div>
+
+      <div class="quote-strip">
+        <span>✦</span>
+        <p>“The sweetest gifts are the ones that took time to make.”</p>
+        <span>✦</span>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="page" id="shop">
+      <div class="page-intro">
+        <p class="eyebrow">THE COOKACROCHET COLLECTION</p>
+        <h1>Little things,<br><em>big feelings.</em></h1>
+        <p>Demo collection for now — names and prices can be replaced with the real catalogue later.</p>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="flowers">Flowers</button>
+        <button class="filter" data-filter="accessories">Accessories</button>
+        <button class="filter" data-filter="gifts">Giftables</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="flowers">
+          <div class="product-image sun"><div class="product-emoji">🌻</div><span class="pill">Bestseller</span></div>
+          <div class="product-info"><div><h3>Sunny Bloom</h3><p>Handmade crochet flower</p></div><strong>₹499</strong></div>
+          <button class="add-btn" data-product="Sunny Bloom">Add to enquiry +</button>
+        </article>
+        <article class="product-card" data-category="flowers">
+          <div class="product-image rose"><div class="product-emoji">🌹</div><span class="pill">New</span></div>
+          <div class="product-info"><div><h3>Rose in Bloom</h3><p>Soft crochet rose</p></div><strong>₹449</strong></div>
+          <button class="add-btn" data-product="Rose in Bloom">Add to enquiry +</button>
+        </article>
+        <article class="product-card" data-category="accessories">
+          <div class="product-image blue"><div class="product-emoji">🎀</div></div>
+          <div class="product-info"><div><h3>Bow Hair Clip</h3><p>Sweet handmade accessory</p></div><strong>₹299</strong></div>
+          <button class="add-btn" data-product="Bow Hair Clip">Add to enquiry +</button>
+        </article>
+        <article class="product-card" data-category="gifts">
+          <div class="product-image pastel"><div class="product-emoji">🧶</div></div>
+          <div class="product-info"><div><h3>Mini Yarn Gift Box</h3><p>Curated crochet surprise</p></div><strong>₹699</strong></div>
+          <button class="add-btn" data-product="Mini Yarn Gift Box">Add to enquiry +</button>
+        </article>
+        <article class="product-card" data-category="flowers">
+          <div class="product-image field"><div class="product-emoji">🌼</div></div>
+          <div class="product-info"><div><h3>Wildflower Pair</h3><p>Two tiny crochet blooms</p></div><strong>₹549</strong></div>
+          <button class="add-btn" data-product="Wildflower Pair">Add to enquiry +</button>
+        </article>
+        <article class="product-card" data-category="accessories">
+          <div class="product-image lavender"><div class="product-emoji">🌸</div></div>
+          <div class="product-info"><div><h3>Petal Hair Tie</h3><p>Soft everyday accessory</p></div><strong>₹249</strong></div>
+          <button class="add-btn" data-product="Petal Hair Tie">Add to enquiry +</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CUSTOM -->
+    <section class="page" id="custom">
+      <div class="custom-layout">
+        <div class="page-intro">
+          <p class="eyebrow">MAKE IT YOURS</p>
+          <h1>Your idea,<br><em>in yarn.</em></h1>
+          <p>Want a particular flower, colour palette, gift or tiny keepsake? Send the idea and we'll take it from there.</p>
+          <div class="steps">
+            <div><b>01</b><span><strong>Tell us your idea</strong><small>Flower, colours, quantity or occasion.</small></span></div>
+            <div><b>02</b><span><strong>We plan it together</strong><small>We'll confirm design, price and timeline.</small></span></div>
+            <div><b>03</b><span><strong>Made just for you</strong><small>Your handmade piece gets crafted with care.</small></span></div>
+          </div>
+        </div>
+
+        <form class="custom-form" id="customForm">
+          <div class="form-top"><span>Custom enquiry</span><span>♡</span></div>
+          <label>Your name<input required id="name" placeholder="e.g. Priya"></label>
+          <label>What would you like? 
+            <select id="idea">
+              <option>Custom crochet flowers</option>
+              <option>Hair accessory</option>
+              <option>Gift / hamper</option>
+              <option>Something completely different</option>
+            </select>
+          </label>
+          <label>Tell us about it<textarea required id="message" rows="4" placeholder="Colours, quantity, occasion, reference idea..."></textarea></label>
+          <label>Instagram / WhatsApp<input id="contact" placeholder="@yourhandle or number"></label>
+          <button class="btn primary full" type="submit">Send custom enquiry <span>→</span></button>
+          <p class="form-note">Demo form — it shows a confirmation on this website.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="about">
+      <div class="about-hero">
+        <div class="about-logo"><img src="assets/logo.png" alt="CookaCrochet logo"></div>
+        <div>
+          <p class="eyebrow">OUR LITTLE CORNER</p>
+          <h1>Made by hand.<br><em>Meant to be kept.</em></h1>
+          <p>CookaCrochet is a tiny handmade world built around yarn, flowers and the joy of making something that feels personal.</p>
+        </div>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-card big"><span>01 / THE WHY</span><h2>Because handmade feels different.</h2><p>A crochet flower isn't just another product. It's time, patience and a little piece of someone's creativity — made to be gifted, remembered and loved.</p></div>
+        <div class="story-card small peach"><span>02 / THE MOOD</span><h3>Soft colours.<br>Happy details.</h3><div>🌷 🧶 🌼</div></div>
+        <div class="story-card small mint"><span>03 / THE PROMISE</span><h3>Small batches.<br>Thoughtful pieces.</h3><div>♡ ✦ ♡</div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" id="contact">
+      <div class="contact-layout">
+        <div>
+          <p class="eyebrow">LET'S TALK</p>
+          <h1>Have a question?<br><em>Say hello.</em></h1>
+          <p class="contact-copy">For orders, custom requests, collaborations or anything crochet-related, drop a message. We'll be happy to help.</p>
+          <div class="contact-cards">
+            <a href="https://instagram.com/cookacrochet" target="_blank"><span>◎</span><div><small>INSTAGRAM</small><strong>@cookacrochet</strong></div><b>↗</b></a>
+            <a href="https://cookacroche.smartbiz.in" target="_blank"><span>⌁</span><div><small>WEBSITE</small><strong>cookacroche.smartbiz.in</strong></div><b>↗</b></a>
+          </div>
+        </div>
+        <div class="contact-art">
+          <div class="heart">♡</div>
+          <div class="yarn-ball">🧶</div>
+          <p>made slowly<br>with love</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/logo.png" alt=""> <span>CookaCrochet</span></div>
+    <span>Handmade • Flowers • Blooms & more</span>
+    <span>© 2026 CookaCrochet</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
